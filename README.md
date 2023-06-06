@@ -30,9 +30,6 @@ This is a simple password manager application built with Python and Tkinter. It 
 
 Feel free to modify and enhance the application to suit your needs.
 
-## Download and Use
-Download `password_manager.exe` and start using it
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
