@@ -2,6 +2,8 @@
 
 This is a simple password manager application built with Python and Tkinter. It allows you to store website, email, and password information securely.
 
+![GUI Screenshot](./screenshot.png)
+
 ## Features
 
 - Generate random passwords
