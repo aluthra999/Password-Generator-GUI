@@ -8,6 +8,7 @@ This is a simple password manager application built with Python and Tkinter. It 
 - Save website, email, and password information
 - User-friendly graphical interface
 - Data saved in a text file
+- Store password locally on your computer
 
 ## Code Explanation
 
