@@ -1,16 +1,19 @@
 import random
-import tkinter
 from tkinter import *
 from tkinter import messagebox
 import string
+import pyperclip
 
 
 # -------- PASSWORD GENERATOR ------------ #
-# updated
+
+
 def generate_password(length=12):
     chars = string.ascii_letters + string.digits + string.punctuation
     password = "".join(random.choice(chars) for _ in range(length))
+
     password_entry.insert(0, password)
+    pyperclip.copy(password)
 
 
 # -------------- SAVE PASSWORDS -----------------------#
@@ -67,6 +70,7 @@ email_label.grid(column=0, row=2)
 
 email_entry = Entry(width=36)
 email_entry.grid(column=1, row=2, columnspan=2)
+email_entry.insert(0, "youremail@gmail.com")
 
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
