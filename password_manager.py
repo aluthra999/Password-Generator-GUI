@@ -2,6 +2,7 @@ import random
 import tkinter
 from tkinter import *
 from tkinter import messagebox
+import string
 
 
 # -------- PASSWORD GENERATOR ------------ #
