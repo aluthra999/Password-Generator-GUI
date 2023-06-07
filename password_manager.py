@@ -1,6 +1,8 @@
 import random
 import tkinter
 from tkinter import *
+from tkinter import messagebox
+
 
 # -------- PASSWORD GENERATOR ------------ #
 
@@ -24,11 +26,29 @@ def save():
     email = email_entry.get()
     password = password_entry.get()
 
-    with open('data.txt', 'a') as f:
-        f.write(f"{website} | {email} | {password}\n")
+    if len(website) == 0 or len(email) == 0 or len(password) == 0:
+        messagebox.showinfo(title='Oops', message="Please do not leave any field empty!")
+    else:
+        is_ok = messagebox.askokcancel(title=website, message=f'Email and Password for "{website.upper()}" is'
+                                                              f'\nEmail: {email} \nPassword: {password} '
+                                                              f'\nAll looks good?')
+        if is_ok:
+            with open('data.txt', 'a') as f:
+                f.write(f"{website} | {email} | {password}\n")
+                website_entry.delete(0, END)
+                password_entry.delete(0, END)
 
+
+# ---------------- CLEAR BUTTON -----------------------#
+def clear():
     website_entry.delete(0, END)
     password_entry.delete(0, END)
+
+
+# def clear_all():
+#     website_entry.delete(0, END)
+#     password_entry.delete(0, END)
+#     email_entry.delete(0, END)
 
 
 # ------------------- UI SETUP ------------------------ #
@@ -58,13 +78,19 @@ email_entry.grid(column=1, row=2, columnspan=2)
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
 
-password_entry = Entry(width=18)
-password_entry.grid(column=1, row=3)
+password_entry = Entry(width=36)
+password_entry.grid(column=1, row=3, columnspan=3)
 
-generate_button = Button(text="Generate Password", command=generate_password)
-generate_button.grid(row=3, column=2)
+generate_button = Button(text="Generate Password", width=31, command=generate_password)
+generate_button.grid(column=1, row=4, columnspan=2)
+
+clear_button = Button(text='Clear', width=31, command=clear)
+clear_button.grid(column=1, row=5, columnspan=2)
+
+# clear_all_button = Button(text='Clear All', width=15, command=clear_all)
+# clear_all_button.grid(column=2, row=4)
 
 add_button = Button(text="Add", width=31, command=save)
-add_button.grid(column=1, row=4, columnspan=2)
+add_button.grid(column=1, row=6, columnspan=2)
 
 window.mainloop()
