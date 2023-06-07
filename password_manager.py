@@ -6,16 +6,11 @@ import string
 
 
 # -------- PASSWORD GENERATOR ------------ #
-
 # updated
 def generate_password(length=12):
     chars = string.ascii_letters + string.digits + string.punctuation
-
-    v = tkinter.StringVar()
     password = "".join(random.choice(chars) for _ in range(length))
-
-    v.set(password)
-    password_entry.config(textvariable=v)
+    password_entry.insert(0, password)
 
 
 # -------------- SAVE PASSWORDS -----------------------#
