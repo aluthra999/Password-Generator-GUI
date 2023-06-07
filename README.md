@@ -51,7 +51,7 @@ Feel free to modify and enhance the application to suit your needs.
 
 ## Acknowledgements
 
-The Password Manager application is based on the tutorial from Dr. Angela Yu's Python Course[https://www.udemy.com/course/100-days-of-code/].
+The Password Manager application is based on the tutorial from [Dr. Angela Yu's Python Course](https://www.udemy.com/course/100-days-of-code/).
 
 Feel free to customize and enhance the application to suit your needs. Happy password management!
 
