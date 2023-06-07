@@ -13,8 +13,7 @@ This is a simple password manager application built with Python and Tkinter. It 
 - User-friendly graphical interface
 - Data saved in a text file
 - Store password locally on your computer
--- UPDATE
-- Clear functionality: You can easily clear the website and password fields with the click of a button.
+- UPDATE > Clear functionality: You can easily clear the website and password fields with the click of a button.
 
 ## Code Explanation
 
