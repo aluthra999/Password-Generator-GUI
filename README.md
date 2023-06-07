@@ -12,7 +12,7 @@ This is a simple password manager application built with Python and Tkinter. It 
 - User-friendly graphical interface
 - Data saved in a text file
 - Store password locally on your computer
-- -- UPDATES --
+-- UPDATES --
 - Clear functionality: You can easily clear the website and password fields with the click of a button.
 - Copy password to clipboard: Using pyperclip, when password generated usning `Generate Password` Button, it will copy the generated password to clipboard.
 
