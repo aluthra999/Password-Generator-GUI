@@ -7,6 +7,7 @@ This is a simple password manager application built with Python and Tkinter. It 
 ## Features
 
 - Generate strong passwords: The application provides a password generator that creates random and secure passwords for your accounts.
+- Copy password to clipboard: Using pyperclip, when password generated usning `Generate Password` Button, it will copy the generated password to clipboard.
 - Store passwords: You can enter the website, email/username, and password details and save them securely for future reference
 - Input validation: The application ensures that no field is left empty before saving the password details. It displays an error message
 - if any field is missing.
