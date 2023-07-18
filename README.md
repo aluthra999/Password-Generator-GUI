@@ -1,4 +1,4 @@
-# Password Manager v-1.1
+# Password Manager v-2.0
 
 This is a simple password manager application built with Python and Tkinter. It allows you to store website, email, and password information securely.
 
@@ -11,15 +11,17 @@ This is a simple password manager application built with Python and Tkinter. It 
 - Input validation: The application ensures that no field is left empty before saving the password details. It displays an error message if any field is missing.
 - User-friendly graphical interface
 - Data saved in a text file
-- Store password locally on your computer
+- Store the password locally on your computer
 
 -- UPDATES --
-- Clear functionality: You can easily clear the website and password fields with the click of a button.
-- Copy password to clipboard: Using pyperclip, when password generated usning `Generate Password` Button, it will copy the generated password to clipboard.
+- Clear functionality: You can quickly clear the website and password fields with a button.
+- Copy password to clipboard: Using pyperclip, when the password is generated using the `Generate Password` Button, it will copy the generated password to the clipboard.
+- Saving password in JSON file.
+- Easy access to find the saved password, write the website name and hit the search button it will pop up the if password is saved for the website.
 
 ## Code Explanation
 
-- The code uses the `random` and `tkinter` modules.
+- The code uses the `random` and `Tkinter` modules.
 - The `generate_password` function generates a random password and updates the password entry field.
 - The `save` function saves the entered information to a text file.
 - The GUI is created using Tkinter widgets.
